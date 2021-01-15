@@ -14,6 +14,9 @@ public class Abstractclass {
  abstract class Shape {
 	abstract void draw();
 	abstract void smell1();
+	public static void a() {
+		System.out.println("yyes");
+	}
 }
 
 //In real scenario, implementation is provided by others i.e. unknown by end user  
@@ -42,6 +45,7 @@ class smell extends Shape {
 	void smell1() {
 		System.out.println("smell1");
 	}
+	
 }
 
 

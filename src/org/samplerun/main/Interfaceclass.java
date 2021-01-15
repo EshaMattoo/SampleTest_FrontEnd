@@ -24,6 +24,8 @@ public class Interfaceclass {
  interface  Shape3 {
 		
 	 public void smell3();
+	 public static void a() {
+		}
 }
 
 //In real scenario, implementation is provided by others i.e. unknown by end user  
@@ -57,6 +59,7 @@ class smell3 implements Shape1,Shape2,Shape3 {
 	public void smell3() {
 		System.out.println("smell3");
 	}
+	
 }
 
 

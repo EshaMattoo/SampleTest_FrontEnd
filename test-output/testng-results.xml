@@ -1,17 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81906" started-at="2020-10-26T12:29:25Z" finished-at="2020-10-26T12:30:47Z">
+  <suite started-at="2021-01-15T22:05:07 IST" name="Test-method Suite" finished-at="2021-01-15T22:05:07 IST" duration-ms="96">
     <groups>
+      <group name="fast">
+        <method signature="process1.bFastTest()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" name="bFastTest" class="org.samplerun.main.ParallelTestTsng.process1"/>
+        <method signature="process2.bFastTest()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" name="bFastTest" class="org.samplerun.main.ParallelTestTsng.process2"/>
+      </group> <!-- fast -->
+      <group name="slow">
+        <method signature="process1.aFastTest(int, int, int)[pri:1, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" name="aFastTest" class="org.samplerun.main.ParallelTestTsng.process1"/>
+        <method signature="process2.aFastTest(int, int, int)[pri:1, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" name="aFastTest" class="org.samplerun.main.ParallelTestTsng.process2"/>
+      </group> <!-- slow -->
     </groups>
-    <test name="Default test" duration-ms="81906" started-at="2020-10-26T12:29:25Z" finished-at="2020-10-26T12:30:47Z">
-      <class name="org.samplerun.automationFramework.Tstngsamlefirsttest">
-        <test-method status="PASS" signature="f()[pri:0, instance:org.samplerun.automationFramework.Tstngsamlefirsttest@3ba9ad43]" name="f" duration-ms="81844" started-at="2020-10-26T12:29:25Z" finished-at="2020-10-26T12:30:47Z">
+    <test started-at="2021-01-15T22:05:07 IST" name="Test-method test" finished-at="2021-01-15T22:05:07 IST" duration-ms="96">
+      <class name="org.samplerun.main.ParallelTestTsng.process1">
+        <test-method is-config="true" signature="something()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" started-at="2021-01-15T22:05:07 IST" name="something" finished-at="2021-01-15T22:05:07 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- org.samplerun.automationFramework.Tstngsamlefirsttest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- something -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" started-at="2021-01-15T22:05:07 IST" name="setUp" finished-at="2021-01-15T22:05:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="bFastTest()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" started-at="2021-01-15T22:05:07 IST" name="bFastTest" finished-at="2021-01-15T22:05:07 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bFastTest -->
+        <test-method signature="aFastTest(int, int, int)[pri:1, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" started-at="2021-01-15T22:05:07 IST" name="aFastTest" data-provider="data-provider" finished-at="2021-01-15T22:05:07 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aFastTest -->
+        <test-method signature="aFastTest(int, int, int)[pri:1, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" started-at="2021-01-15T22:05:07 IST" name="aFastTest" data-provider="data-provider" finished-at="2021-01-15T22:05:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aFastTest -->
+        <test-method is-config="true" signature="aSlowTest()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process1@5f683daf]" started-at="2021-01-15T22:05:07 IST" name="aSlowTest" finished-at="2021-01-15T22:05:07 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aSlowTest -->
+      </class> <!-- org.samplerun.main.ParallelTestTsng.process1 -->
+      <class name="org.samplerun.main.ParallelTestTsng.process2">
+        <test-method is-config="true" signature="something()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" started-at="2021-01-15T22:05:07 IST" name="something" finished-at="2021-01-15T22:05:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- something -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" started-at="2021-01-15T22:05:07 IST" name="setUp" finished-at="2021-01-15T22:05:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="bFastTest()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" started-at="2021-01-15T22:05:07 IST" name="bFastTest" finished-at="2021-01-15T22:05:07 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bFastTest -->
+        <test-method signature="aFastTest(int, int, int)[pri:1, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" started-at="2021-01-15T22:05:07 IST" name="aFastTest" data-provider="data-provider" finished-at="2021-01-15T22:05:07 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aFastTest -->
+        <test-method signature="aFastTest(int, int, int)[pri:1, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" started-at="2021-01-15T22:05:07 IST" name="aFastTest" data-provider="data-provider" finished-at="2021-01-15T22:05:07 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aFastTest -->
+        <test-method is-config="true" signature="aSlowTest()[pri:0, instance:org.samplerun.main.ParallelTestTsng.process2@78ffe6dc]" started-at="2021-01-15T22:05:07 IST" name="aSlowTest" finished-at="2021-01-15T22:05:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aSlowTest -->
+      </class> <!-- org.samplerun.main.ParallelTestTsng.process2 -->
+    </test> <!-- Test-method test -->
+  </suite> <!-- Test-method Suite -->
 </testng-results>

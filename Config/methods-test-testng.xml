@@ -1,0 +1,9 @@
+<suite name="Test-method Suite" parallel="methods" thread-count="2" >
+  <test name="Test-method test" group-by-instances="true">
+  <parameter name="test-name" value="test-method One" />
+    <classes>    
+      <class name="org.samplerun.main.ParallelTestTsng.process1" />
+      <class name="org.samplerun.main.ParallelTestTsng.process2" />
+    </classes>
+  </test>
+</suite>
